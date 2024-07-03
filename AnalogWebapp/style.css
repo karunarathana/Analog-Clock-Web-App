@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_section{
+  height: 10%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #080808;
+}
+.webapp_main_wrapper{
+  height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clock_background{
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url('Assert/4493.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clock {
+  border: 5px solid rgb(4, 4, 4);
+  width: 450px;
+  height: 350px;
+  border-radius: 100%;
+  position: relative;
+  background: url('Assert/Ellipse\ 31.png') no-repeat center;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(214, 204, 204, 0.2), 0 6px 20px 0 rgba(39, 38, 38, 0.19);
+}
+
+.hand {
+  width: 30%;
+  height: 6px;
+  position: absolute;
+  top: 10.3em;
+  left: 5.5em;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hand.hour {
+  height: 6px;
+  background-color: rgb(8, 8, 8);
+  /* background: url("Assert/Group\ 1503.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.hand.minute {
+  height: 6px;
+  background-color: rgb(140, 153, 140);
+}
+
+.hand.second {
+  height: 4px;
+  background-color: rgb(255, 3, 3);
+}
+
+.center {
+  width: 12px;
+  height: 12px;
+  background-color: #0c0c0c;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
